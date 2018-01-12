@@ -33,5 +33,10 @@ public class Practice01DrawTextView extends View {
 
         // 使用 drawText() 来绘制文字
         // 文字坐标： (50, 100)
+        /**
+         * 方法的参数很简单：
+         * text 是文字内容，x 和 y 是文字的坐标。但需要注意：这个坐标并不是文字的左上角，而是一个与左下角比较接近的位置。
+         */
+        canvas.drawText(text, 50, 100, paint);
     }
 }
